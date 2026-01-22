@@ -20,7 +20,7 @@ spec:
       containers:
       - name: myapp
         # Update your image version here
-        image: achinta1/todo:v1.0
+        image: souravkuila12345/todo-app:1.0
         resources:
           limits:
             memory: "100Mi"
