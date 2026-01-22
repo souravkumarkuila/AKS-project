@@ -56,7 +56,7 @@ Docker & Docker Hub account
 Github Account
 Create a Kubernetes namespace 'todo'
 Steps
-Clone the repo: git clone https://github.com/k8s-Project-Achinta/aks-assignment.git
+Clone the repo: git clone https://github.com/souravkumarkuila/kubernetes-project
 
 Provision AKS cluster using Terraform
 Update subscription id in infra/ENV/DEV/provider.tf file. Then, run below commands
@@ -72,7 +72,7 @@ Setup service principle in azure to authenticate using OIDC and setup the secret
 image
 Build and Push Docker Image and Deploy to AKS
 Update manifests/deployment.yaml and .github/workflows/main.yml with proper version for the app
-Access Application Open: http://achinta.site
+Access Application Open: http://kuilacattlefeeds.shop
 CI/CD Workflow
 The GitHub Actions workflow (.github/workflows/deploy.yml) automates:
 
