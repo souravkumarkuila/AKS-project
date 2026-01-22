@@ -6,7 +6,7 @@ Terraform for provisioning a managed AKS cluster.
 Docker for containerizing the React Todo application.
 GitHub Actions for CI/CD to build, push Docker images, and deploy to the AKS cluster.
 Kubernetes manifests for deploying the app and exposing it via an Ingress to make it publicly accessible.
-The app is live and accessible at: http://achinta.site
+The app is live and accessible at: http://kuilacattlefeeds.shop
 
 Repository Structure
 ├── infra/                  # Terraform modules for AKS cluster provisioning
