@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: todo-app
+spec:
+  selector:
+    matchLabels:
+      app: todoapp
+  replicas: 3
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: todoapp
+    spec:
+      containers:
+      - name: myapp
+        # Update your image version here
+        image: achinta1/todo:v1.0
+        resources:
+          limits:
+            memory: "100Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 80
